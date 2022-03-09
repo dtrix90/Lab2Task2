@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Dominique's Quiz</title>
+    <script defer src="code.js"></script>
+</head>
+<body>
+    <form class="form" id="form">
+        <div class="form-container">
+
+            <label for="fname">First and last name:</label><br>
+            <input type="text" placeholder="Enter full name" id="fname" name="fname"><br>
+
+            <label for="email">Email:</label><br>
+            <input type="mail" placeholder="Email address" id="email" name="email"><br>
+
+        </div>
+
+        <h3>Quiz</h3>
+        <h6>(All fields are required)</h6>
+
+        <div id="radio1"></div>
+            <p>Question 1: what is the rarest M&M color?</p>
+        
+            <input type="radio" id="Brown" name="mm" value="Brown">
+            <label for="Brown">Brown</label><br>
+
+            <input type="radio" id="purple" name="mm" value="purple">
+            <label for="purple">Purple</label><br>
+
+            <input type="radio" id="blue" name="mm" value="blue">
+            <label for="blue">Blue</label>
+        </div><br>
+
+        <div id="radio2"></div>
+            <p>Question 2: which country invented ice cream?</p>
+        
+            <input type="radio" id="nepal" name="icecream" value="nepal">
+            <label for="nepal">Nepal</label><br>
+
+            <input type="radio" id="China" name="icecream" value="China">
+            <label for="China">China</label><br>
+
+            <input type="radio" id="Denmark" name="icecream" value="Denmark">
+            <label for="Denmark">Denmark</label>
+        </div><br>
+
+        <div class="check-box">
+            
+            <p>Question 3: which of the following are considered to be fruits?</p>
+
+            <label>
+                <INPUT TYPE="checkbox" NAME="input" VALUE="wrong">Broccoli<BR>
+            </label>
+
+            <label>
+                <INPUT TYPE="checkbox" NAME="input" VALUE="wrong">Harricot Verts<BR>
+            </label>
+
+            <label>
+                <INPUT TYPE="checkbox" NAME="input" VALUE="right">Tomatoes<BR>
+            </label>
+
+            <label>
+                <INPUT TYPE="checkbox" NAME="input" VALUE="right">Cucumbers<BR>
+            </label>
+
+            <label>
+                <INPUT TYPE="checkbox" NAME="input" VALUE="right">Peppers
+            </label>
+        </div><br>
+
+        <div class="open-question">
+
+            <label for="word"><p>Question 4: what is the most consumed manufactured drink in the world?</p></label>
+            <input type="text" placeholder="Enter a word" id="word" name="word"><br>
+            
+        </div><br>
+
+        <button type="submit" id="answer" value="submit" onclick="validate()">Submit</button>
+        <button type="refresh" id="reload" value="reload" onclick="location.reload()">Refresh page</button><br>
+        
+        <div id="score"></div>
+
+        <span>
+            <div class="answ" id="answers">
+                <h2>Answers:</h2>
+                <p>Question 1: Brown</p>
+                <p>Question 2: China</p>
+                <p>Question 3: tomatoes, cucumbers & peppers</p>
+                <p>Question 4: tea</p>
+            </div>
+        </span>
+    
+    </form><br>
+
+    
+</body>
+</html>

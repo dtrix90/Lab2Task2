@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+
+html, body {
+    color: #24252a;
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(#e66465, #9198e5);
+    text-align: center;
+    height: 100%;
+}
+
+.form {
+    display: inline-block;
+    text-align: left;
+}
+
+.open-question input {
+    width: 300px;
+}
+
+.form span .answ {
+    color: #24252a;
+}
