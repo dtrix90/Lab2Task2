@@ -23,7 +23,7 @@ function validate(){
 
     const fnameValue = fname.value.trim();
     const emailValue = email.value.trim();
-    const wordValue = word.value.trim();
+    const wordValue = word.value.trim().toLowerCase();
     let scoreCounter = 0;
     
 
@@ -77,7 +77,7 @@ function validate(){
         alert("Word required.")
         return false;
     }
-    else if (wordValue === "TEA".toLowerCase()) {
+    else if (wordValue === "tea") {
         scoreCounter += 1;
     }
 
