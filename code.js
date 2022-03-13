@@ -18,7 +18,7 @@ form.addEventListener('submit', (e) => {
 function validate(){
 
     // name and email 
-    const regLetters = /^[a-z ,.'-]+$/i;
+    const regLetters = /^[a-z]([-']?[a-z]+)*( [a-z]([-']?[a-z]+)*)+$/;
     const regEmail =  /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
 
     const fnameValue = fname.value.trim();
