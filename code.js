@@ -18,6 +18,7 @@ form.addEventListener('submit', (e) => {
 function validate(){
 
     // name and email 
+    const regWord = /[a-zA-Z]/g;
     const regLetters = /^[a-z]([-']?[a-z]+)*( [a-z]([-']?[a-z]+)*)+$/;
     const regEmail =  /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
 
@@ -73,7 +74,7 @@ function validate(){
 
 
     // open question
-    if (!regLetters.test(wordValue)) {
+    if (!regWord.test(wordValue)) {
         alert("Word required.")
         return false;
     }
